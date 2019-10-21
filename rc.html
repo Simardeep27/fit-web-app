@@ -1,0 +1,25 @@
+<html>
+<body bgcolor="black">
+<font color="white">THESE ARE OUR REGULAR COSTUMERS</FONT>
+<div class="sports" style="max-width:500px">
+  <img class="mySlides" src="12.jpg" style="width:150%">
+  <img class="mySlides" src="13.jpg" style="width:150%">
+  <img class="mySlides" src="14.png" style="width:100%">
+</div>
+
+<script>
+var ci= 0;
+changeimage();
+
+function changeimage() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    ci++;
+    if (ci > x.length) {ci = 1}    
+    x[ci-1].style.display = "block";  
+    setTimeout(changeimage, 2000); 
+}
+</script>

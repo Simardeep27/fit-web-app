@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Offers</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: RED;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: orange;
+    
+}
+input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+.coupon {
+    border: 5px dotted #bbb;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.container {
+    padding: 2px 16px;
+    background-color: white;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+}
+
+.expire {
+    color: red;
+}
+</style>
+</head>
+<body bgcolor="black">
+
+ <ul>
+ <img src="1.gif" width="150" height="80">
+ <li><a  href="main.html">HOME</a></li>
+  <li><a href="1.html">ABOUT US</a></li>
+  <li><a href="products.html">PRODUCTS</a></li>
+  <li><a href="offers.html">OFFERS</a></li>
+  <li><a href="service.html">SERVICES</a></li>
+  <li><a href="http://localhost/contact.php">CONTACT</a></li>
+  </ul>
+<form name=f2>
+<input type ="text" name="txt1" placeholder="enter your redeem code for discount">
+<br>
+<input type="submit" name="btn" value="submit" OnClick=fa()>
+<script>
+function fa(){
+var j= document.f2.txt1.value;
+if(j==00001)
+{
+alert("you get 50% off on every product");
+}
+else
+{
+alert("sorry wrong redeem code");
+}
+}
+</script>
+<div class="coupon">
+  <div class="container">
+    <h2><font color="red">"GO SPORTS"</font></h2>
+  </div>
+  <img src="71.jpg" alt="Avatar" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+    <p>EXCLUSIVE DISCOUNT OFFER FOR SPC MEMBERS</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    Valid upto:<p class="expire">1/12/2017 TO 1/08/2018</p>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
